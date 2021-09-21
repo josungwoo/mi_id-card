@@ -48,46 +48,35 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 5.0,
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 40),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.teal,
+                      size: 30.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       '82+ 010 5156 3297',
-                      style: TextStyle(fontFamily: 'SourceSansPro', color: Colors.teal, fontSize: 15.0),
+                      style: TextStyle(fontFamily: 'SourceSansPro', color: Colors.teal, fontSize: 25.0),
                     ),
-                  ],
+                  ),
                 ), //Row in phone number container
-              ), //Container phone number
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 40),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+               //Container phone number
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       color: Colors.teal,
+                      size: 35,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       'cso3297@gmail.com',
-                      style: TextStyle(fontFamily: 'SourceSansPro', color: Colors.teal, fontSize: 15.0),
+                      style: TextStyle(fontFamily: 'SourceSansPro', color: Colors.teal, fontSize: 25.0),
                     ),
-                  ],
+                  ),
                 ), //Row in phone number container
-              ), //Container phone number
             ], //widget
           ), //column
         ), //safearea
